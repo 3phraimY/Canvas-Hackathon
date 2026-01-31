@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { listCourses } from "../hooks/CanvasAPI";
 
 export default function Home() {
-  const [coursedata, setcoursedata] = useState(0);
+  const [coursedata, setcoursedata] = useState(null);
 
   useEffect(() => {
     async function fetchCourses() {
@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <h2>Week At a Glance</h2>
       <h3>Tomorrow </h3>
-      <div>{coursedata}</div>
+      <div>{JSON.stringify(coursedata)}</div>
       <p>Class </p>
       <p>Class name; homework assignments</p>
       <h3>Next 2 Days</h3>
