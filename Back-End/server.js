@@ -1,9 +1,17 @@
-import express from "express";
+const express = require("express");
+const cors = require("cors");
+require("dotenv").config();
+
+const {
+  listCourses,
+  courseAssignments,
+} = require("./controllers/CanvasAPIController");
+
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello from Node.js!");
-});
+// Route definitions
+app.get("/listCourses", listCourses);
+app.get("/courseAssignments/:courseId", courseAssignments);
 
 app.listen(3000, () => console.log("Server running on port 3000"));
-export default app;
+module.exports = app;
