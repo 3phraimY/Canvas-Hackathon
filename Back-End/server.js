@@ -9,6 +9,8 @@ const {
 
 const app = express();
 
+app.use(cors());
+
 // Route definitions
 app.get("/listCourses", listCourses);
 

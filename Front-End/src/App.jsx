@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import TopBar from "./components/TopBar";
-import SideBar from "./components/SideBar";
-import Dropdown from "./components/Dropdown";
+import TopBar from "./Components/TopBar";
+import SideBar from "./Components/SideBar";
+import Dropdown from "./Components/Dropdown";
 
 import Home from "./Pages/Home";
 import Calendar from "./Pages/Calendar";
