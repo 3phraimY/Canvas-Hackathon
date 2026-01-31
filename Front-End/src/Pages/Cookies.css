@@ -1,0 +1,145 @@
+/* Layout */
+.cookies-page {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cookies-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.cookies-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Main area: grid with animation area in center */
+.cookies-main {
+  display: grid;
+  grid-template-columns: 1fr 360px 260px; /* left | animation area | right */
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: transparent;
+}
+
+/* Left: Cookies count */
+.cookies-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.stat-title {
+  font-size: 18px;
+  color: #333;
+}
+
+.stat-value {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Center animation area */
+.animation-area {
+  position: relative;
+  width: 360px;
+  height: 220px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+
+/* Moving cookie */
+.cookie-btn {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  padding: 0;
+  cursor: pointer;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 1;
+  user-select: none;
+  touch-action: manipulation;
+  transform: translate(0, 0);
+  transition: transform 0s;
+}
+
+/* Right: Money & Upgrade */
+.cookies-right {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  text-align: right;
+}
+
+.money-title {
+  font-size: 16px;
+  color: #333;
+}
+
+.money-value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Upgrade button */
+.upgrade-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.upgrade-btn {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.upgrade-btn.disabled {
+  background: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Reset button */
+.reset-btn {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Helper text */
+.helper-text {
+  font-size: 13px;
+  color: #444;
+  text-align: right;
+}
