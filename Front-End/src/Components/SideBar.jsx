@@ -6,8 +6,8 @@ export default function SideBar() {
   return (
     <div className="sidebar">
       <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/calendar">Calendar</Link>
+      <Link to="/classview">Class View</Link>
     </div>
   );
 }
