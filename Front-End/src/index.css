@@ -74,3 +74,8 @@ button:focus-visible {
   padding: 20px;
   flex: 1;
 }
+.tm {
+  font-size: 0.6em;       /* Makes it smaller */
+  vertical-align: super;  /* Makes it tall */
+  margin-left: 2px;       /* Makes the space spacing */
+}
