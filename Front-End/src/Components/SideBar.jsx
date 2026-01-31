@@ -8,6 +8,14 @@ export default function SideBar() {
       <Link to="/">Home</Link>
       <Link to="/calendar">Calendar</Link>
       <Link to="/classview">Class View</Link>
+      <Link
+        to="/cookies"
+        className="invisible-btn"
+        aria-label="Hidden Cookies link"
+        title="Hidden action"
+      >
+        Hidden
+      </Link>
     </div>
   );
 }
