@@ -1,6 +1,0 @@
-# yamllint disable-file
----
-{{- range (glob "./test_resources/config_walk/*.yml") }}
-{{ fileContent . }}
-{{- end }}
-...

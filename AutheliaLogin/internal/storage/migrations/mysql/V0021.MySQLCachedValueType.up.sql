@@ -1,1 +1,0 @@
-ALTER TABLE cached_data MODIFY value MEDIUMBLOB;
