@@ -1,0 +1,21 @@
+---
+runner:
+  eslint:
+    cmd: cd web && pnpm eslint --format rdjson --ext '*/**/*.{js,jsx,ts,tsx}' .
+    format: rdjson
+    level: error
+
+  golangci:
+    cmd: golangci-lint run
+    errorformat:
+      - '%E%f:%l:%c: %m'
+      - '%E%f:%l: %m'
+      - '%C%.%#'
+    level: error
+
+  yamllint:
+    cmd: yamllint -f parsable .
+    errorformat:
+      - '%f:%l:%c: %m'
+    level: error
+...
