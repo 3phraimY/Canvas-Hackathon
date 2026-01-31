@@ -8,6 +8,7 @@ import Dropdown from "./components/Dropdown";
 import Home from "./Pages/Home";
 import Calendar from "./Pages/Calendar";
 import ClassView from "./Pages/ClassView";
+import Login from "./Pages/Login";
 
 import "./index.css";
 
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/classview" element={<ClassView />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </div>
       </div>
