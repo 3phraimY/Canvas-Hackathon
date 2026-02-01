@@ -25,9 +25,10 @@ function formatDate(d) {
 // According to the documentation, assignments should be object keyed(?) by ISO date string (YYYY-MM-DD)
 //Essentially a mapping of dates to list of assignment strings 
 // The example given is this: { "2026-01-31": ["Math: p.10", "Science lab"] }
-export default function WeekCalendar({ assignments = {} }) {
+export default function WeekCalendar({ assignments = {}, startDate = null }) {
   const today = new Date();
-  const start = getStartOfWeek(today);
+  const dateToUse = startDate || today;
+  const start = getStartOfWeek(dateToUse);
   const days = Array.from({ length: 7 }).map((_, i) => {
     const dt = new Date(start);
     dt.setDate(start.getDate() + i);

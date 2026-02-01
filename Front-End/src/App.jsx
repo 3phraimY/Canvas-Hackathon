@@ -16,21 +16,23 @@ import "./index.css";
 export default function App() {
   return (
     <Router>
-      <TopBar />
+      <div className="app-container">
+        <TopBar />
 
-      <div className="layout">
-        <SideBar />
+        <div className="layout">
+          <SideBar />
 
-        <div className="content">
-          <Dropdown />
+          <div className="content">
+            <Dropdown />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/calendar" element={<Calendar />} />
-            <Route path="/classview" element={<ClassView />} />
-            <Route path="/cookies" element={<Cookies />} />
-            <Route path="/login" element={<Login />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/calendar" element={<Calendar />} />
+              <Route path="/classview" element={<ClassView />} />
+              <Route path="/cookies" element={<Cookies />} />
+              <Route path="/login" element={<Login />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </Router>
