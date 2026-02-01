@@ -210,7 +210,7 @@ function App() {
       </div>
       <p className="text-center">
         <span className="bold">Selected Date:</span>{" "}
-        {selectedDate.toDateString()}
+        {myDate.toDateString()}
       </p>
 
       <div className='calendar-controls'>
